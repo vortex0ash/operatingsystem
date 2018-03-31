@@ -7,18 +7,16 @@ int main()
     printf("Enter Total Number of Process:");
     scanf("%d",&n);
  
-    printf("\nEnter Burst Time and Priority\n");
+    printf("\nEnter the new priorities \n");
     for(i=0;i<n;i++)
     {
         printf("\nP[%d]\n",i+1);
-        printf("Burst Time:");
-        scanf("%d",&bt[i]);
         printf("Priority:");
         scanf("%d",&pr[i]);
         p[i]=i+1;           //contains process number
     }
  
-    //sorting burst time, priority and process number in ascending order using selection sort
+    // Priority and process number in ascending order using selection sort
     for(i=0;i<n;i++)
     {
         pos=i;
